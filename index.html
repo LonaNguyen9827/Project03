@@ -96,6 +96,15 @@
         />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- Thư viện AOS (Animation) -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Thư viện Animate.css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -206,6 +215,8 @@
                                 src="./assets/img/service.jpg"
                                 alt=""
                                 class="service__img"
+                                data-aos="fade-up-right"
+                                data-aos-delay="1000"
                             />
                         </figure>
                         <div>
@@ -461,6 +472,8 @@
                                     src="./assets/img/dentist-removebg-preview.png"
                                     alt="Dr. Essence Page"
                                     class="team-item__thumb"
+                                    data-aos="fade-up"
+                                    data-aos-duration="3000"
                                 />
                             </div>
                             <h3 class="team-item__name">Dr. Essence Page</h3>
@@ -476,6 +489,8 @@
                                     src="./assets/img/dentist-2-removebg-preview.png"
                                     alt="Dr. Emily Smith"
                                     class="team-item__thumb"
+                                    data-aos="fade-up"
+                                    data-aos-duration="3000"
                                 />
                             </div>
                             <h3 class="team-item__name">Dr. Emily Smith</h3>
@@ -491,6 +506,8 @@
                                     src="./assets/img/dentist-3-removebg-preview.png"
                                     alt="Dr. David Json"
                                     class="team-item__thumb"
+                                    data-aos="fade-up"
+                                    data-aos-duration="3000"
                                 />
                             </div>
                             <h3 class="team-item__name">Dr. David Json</h3>
@@ -506,6 +523,8 @@
                                     src="./assets/img/dentist-4-removebg-preview.png"
                                     alt="Dr. Julia Rome"
                                     class="team-item__thumb"
+                                    data-aos="fade-up"
+                                    data-aos-duration="3000"
                                 />
                             </div>
                             <h3 class="team-item__name">Dr. Julia Rome</h3>
@@ -564,10 +583,16 @@
                                 src="./assets/icons/phone.png"
                                 alt=""
                                 class="install__img"
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
                             />
                         </figure>
                         <section class="install__content">
-                            <h2 class="section-heading install__heading">
+                            <h2
+                                class="section-heading install__heading"
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
+                            >
                                 Take back your smile with dentures
                             </h2>
                             <p class="section-desc install__desc">
@@ -710,7 +735,11 @@
                             personalized care you deserve. Call (541) 772-8846
                             to schedule
                         </p>
-                        <a href="#!" class="btn">Appointment</a>
+                        <a
+                            href="#!"
+                            class="btn animate__animated animate__shakeX"
+                            >Appointment</a
+                        >
                     </section>
                 </div>
             </section>
@@ -838,5 +867,11 @@
                 </p>
             </div>
         </footer>
+
+        <!-- JS AOS (Animation) -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

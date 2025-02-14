@@ -875,3 +875,9 @@ a {
     font-size: 1.4rem;
     line-height: 1.86;
 }
+
+/* Animation */
+
+.btn.animate__animated {
+    animation-iteration-count: infinite;
+}
